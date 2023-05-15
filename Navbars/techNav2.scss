@@ -1,0 +1,62 @@
+// <div class="nav">
+// <div class="nav-top"><p>placehold</p></div>
+// <a href=""><button class="logo">insert logo</button></a>
+// <a href=""><button>option1</button></a>
+// <a href=""><button>option2</button></a>
+// <a href=""><button>option3</button></a>
+// </div>
+// <div>
+$background1: #030303;
+$primary: white;
+$secondary: rgb(61, 61, 61);
+$tertiary: rgb(16, 66, 231);
+.nav{
+    background-color: $background1;
+    box-shadow: 0 0 10px $tertiary;
+    width: 100%;
+    top: 0;
+    margin-top: 1.5vw;
+    position: sticky;
+    height: 5vw;
+    text-align: center;
+    .nav-top{
+        background-color: $tertiary;
+        color: $primary;
+        width: 100%;
+        height: 1.5vw;
+        position: fixed;
+        top: 0;
+        text-align: center;
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+    button{
+        background-color: $background1;
+        color: $primary;
+        text-decoration: none;
+        float: right;
+        width: 6vw;
+        height: 3vw;
+        margin: 1vw 1vw 0 0;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: .5s;
+        &:hover{
+            background-color: $secondary;
+            font-weight: bold;
+            font-size: 18px;
+            transition: .5s;
+        }
+    }
+    .logo {
+        float: left;
+        width: 4vw;
+        height: 4vw;
+        margin: .5vw 0 0 1vw;
+        background-image: url("");
+        background-position: center;
+        background-size: cover;
+    }
+}
